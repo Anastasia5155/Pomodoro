@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="clock">
+    <p id="sw">Work</p>
+      <h2 id="timer-display">25:00</h2>
+    <input id="timer-range" type="range" min="1" max="100" step="1" value="1" > 
+    <button id="start"></button>
+    <button id="stop"></button>
+    <button id="restart"></button>
+    <p class="info"> <span id="focus-for"></span> <span id="minute"></span></p>
+  </div>
+  <div class="switch">
+   <button id="work">Work</button>
+   <button id="sh-break">Short break</button>
+   <button id="lg-break">Long break</button>
+  </div>
+  <div class="input">
+    <input type="text" id="new-item-input" placeholder="Create a new task!">
+    <button id="add-btn">Create</button>
+  </div>
+  <div id="checklist">
+    <ul id="list-container"></ul>
+  </div>
+  
+<script src="app.js"></script>
+</body>
+</html>
